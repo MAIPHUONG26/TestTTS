@@ -3,10 +3,7 @@ import java.math.BigInteger;
 import java.util.UUID;
 import jakarta.persistence.*;
 import jakarta.persistence.criteria.CriteriaBuilder;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.hibernate.type.descriptor.jdbc.TinyIntJdbcType;
 
 import java.util.Date;
@@ -15,6 +12,7 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+@ToString
 @Table(name = "staff")
 public class NhanVien {
     @Id
